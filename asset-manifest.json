@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/habibariaz/ReactBlogApp.git/static/css/main.834d5417.css",
-    "main.js": "/habibariaz/ReactBlogApp.git/static/js/main.bbd50df7.js",
-    "static/js/453.a5b5c665.chunk.js": "/habibariaz/ReactBlogApp.git/static/js/453.a5b5c665.chunk.js",
-    "static/media/main-img.jpg": "/habibariaz/ReactBlogApp.git/static/media/main-img.8de779c752e064752750.jpg",
-    "static/media/customer1.jpg": "/habibariaz/ReactBlogApp.git/static/media/customer1.db448a7ba36481607b0a.jpg",
-    "static/media/customer3.jpg": "/habibariaz/ReactBlogApp.git/static/media/customer3.a5a2f724edb73d147420.jpg",
-    "static/media/news2.jpg": "/habibariaz/ReactBlogApp.git/static/media/news2.89c6d6ae8bdd12ce23b4.jpg",
-    "static/media/blog2.jpg": "/habibariaz/ReactBlogApp.git/static/media/blog2.69f0d22148fc40988145.jpg",
-    "static/media/blog1.jpg": "/habibariaz/ReactBlogApp.git/static/media/blog1.337e564b9a6669007e7b.jpg",
-    "static/media/blog3.jpg": "/habibariaz/ReactBlogApp.git/static/media/blog3.434903dd056c8d0477a6.jpg",
-    "index.html": "/habibariaz/ReactBlogApp.git/index.html",
-    "main.834d5417.css.map": "/habibariaz/ReactBlogApp.git/static/css/main.834d5417.css.map",
-    "main.bbd50df7.js.map": "/habibariaz/ReactBlogApp.git/static/js/main.bbd50df7.js.map",
-    "453.a5b5c665.chunk.js.map": "/habibariaz/ReactBlogApp.git/static/js/453.a5b5c665.chunk.js.map"
+    "main.css": "/ReactBlogApp/static/css/main.7c619b6b.css",
+    "main.js": "/ReactBlogApp/static/js/main.dd12cf76.js",
+    "static/js/453.a5b5c665.chunk.js": "/ReactBlogApp/static/js/453.a5b5c665.chunk.js",
+    "static/media/main-img.jpg": "/ReactBlogApp/static/media/main-img.8de779c752e064752750.jpg",
+    "static/media/customer1.jpg": "/ReactBlogApp/static/media/customer1.db448a7ba36481607b0a.jpg",
+    "static/media/customer3.jpg": "/ReactBlogApp/static/media/customer3.a5a2f724edb73d147420.jpg",
+    "static/media/news2.jpg": "/ReactBlogApp/static/media/news2.89c6d6ae8bdd12ce23b4.jpg",
+    "static/media/blog2.jpg": "/ReactBlogApp/static/media/blog2.69f0d22148fc40988145.jpg",
+    "static/media/blog1.jpg": "/ReactBlogApp/static/media/blog1.337e564b9a6669007e7b.jpg",
+    "static/media/blog3.jpg": "/ReactBlogApp/static/media/blog3.434903dd056c8d0477a6.jpg",
+    "index.html": "/ReactBlogApp/index.html",
+    "main.7c619b6b.css.map": "/ReactBlogApp/static/css/main.7c619b6b.css.map",
+    "main.dd12cf76.js.map": "/ReactBlogApp/static/js/main.dd12cf76.js.map",
+    "453.a5b5c665.chunk.js.map": "/ReactBlogApp/static/js/453.a5b5c665.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.834d5417.css",
-    "static/js/main.bbd50df7.js"
+    "static/css/main.7c619b6b.css",
+    "static/js/main.dd12cf76.js"
   ]
 }
