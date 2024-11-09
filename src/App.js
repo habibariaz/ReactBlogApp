@@ -1,5 +1,5 @@
 import SignUp from './Components/SignUp';
-import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
+import {Routes, Route, HashRouter } from 'react-router-dom';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
