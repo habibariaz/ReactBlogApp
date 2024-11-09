@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/habibariaz/ReactBlogApp.git/static/css/main.834d5417.css",
-    "main.js": "/habibariaz/ReactBlogApp.git/static/js/main.c46ab9c4.js",
+    "main.js": "/habibariaz/ReactBlogApp.git/static/js/main.bbd50df7.js",
     "static/js/453.a5b5c665.chunk.js": "/habibariaz/ReactBlogApp.git/static/js/453.a5b5c665.chunk.js",
     "static/media/main-img.jpg": "/habibariaz/ReactBlogApp.git/static/media/main-img.8de779c752e064752750.jpg",
     "static/media/customer1.jpg": "/habibariaz/ReactBlogApp.git/static/media/customer1.db448a7ba36481607b0a.jpg",
@@ -12,11 +12,11 @@
     "static/media/blog3.jpg": "/habibariaz/ReactBlogApp.git/static/media/blog3.434903dd056c8d0477a6.jpg",
     "index.html": "/habibariaz/ReactBlogApp.git/index.html",
     "main.834d5417.css.map": "/habibariaz/ReactBlogApp.git/static/css/main.834d5417.css.map",
-    "main.c46ab9c4.js.map": "/habibariaz/ReactBlogApp.git/static/js/main.c46ab9c4.js.map",
+    "main.bbd50df7.js.map": "/habibariaz/ReactBlogApp.git/static/js/main.bbd50df7.js.map",
     "453.a5b5c665.chunk.js.map": "/habibariaz/ReactBlogApp.git/static/js/453.a5b5c665.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.834d5417.css",
-    "static/js/main.c46ab9c4.js"
+    "static/js/main.bbd50df7.js"
   ]
 }
