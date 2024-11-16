@@ -71,6 +71,10 @@ const Contact = () => {
                         </div>
                       </div>
 
+                      <div>
+                        <button className='btn btn-success mt-2'>Submit</button>
+                      </div>
+
                     </form>
                   </div>
                 </div>

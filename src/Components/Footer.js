@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         // 
         <>
-            <footer className="section footer-classic context-dark" style={{ backgroundColor: "#1A1A1A", paddingTop: "100px" }} >
+            <footer className="section footer-classic context-dark" style={{ backgroundColor: "#1A1A1A", paddingTop: "100px" , overflow:"hidden" }} >
                 <div className="container">
                     <div className="row row-30">
 
@@ -23,7 +23,7 @@ const Footer = () => {
                         <div className="col-12 col-md-3 col-xl-3">
                             <h4>Quick Links</h4>
                             <ul className="nav-list">
-                                <li><Link to='/'>Home</Link></li>
+                                <li><Link to='/Home'>Home</Link></li>
                                 <li><Link to='/About'>About</Link></li>
                                 <li><Link to='/Contact'>Contact</Link></li>
                             </ul>

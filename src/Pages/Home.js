@@ -2,12 +2,17 @@ import React from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 // import blog from '../Images/blog.png'
-import blog1 from '../Images/blog1.jpg'
-import blog2 from '../Images/blog2.jpg'
-import blog3 from '../Images/blog3.jpg'
+
 import '../Style/style.css'
+import { categories } from '../Constants/Data'
+import { Link, useSearchParams } from 'react-router-dom'
+import Post from '../Components/Posts/Posts'
 
 const Home = () => {
+
+    const [searchParams] = useSearchParams();
+    const category = searchParams.get('category')
+
     return (
         <>
             <div id='home-mainImg'>
@@ -22,19 +27,29 @@ const Home = () => {
                         <div className="card cardShadow">
                             <div className="card-body ">
                                 <div className="text-center">
-                                    <button className='btn btn-primary' style={{ width: "100%" }}>
-                                        Create A Blog
-                                    </button>
+                                    <Link to={`/Create?category=${category || ''}`}>
+                                        <button className='btn btn-primary' style={{ width: "100%" }}>
+                                            Create A Blog
+                                        </button>
+                                    </Link>
+
                                 </div><br />
-                                <div>
-                                    <div className="list-group">
-                                        <a href="#" className="list-group-item list-group-item-action">All Categories</a>
-                                        <a href="#" className="list-group-item list-group-item-action">Music</a>
-                                        <a href="#" className="list-group-item list-group-item-action">Movies</a>
-                                        <a href="#" className="list-group-item list-group-item-action">Sports</a>
-                                        <a href="#" className="list-group-item list-group-item-action">Tech</a>
-                                        <a href="#" className="list-group-item list-group-item-action">Fashion</a>
-                                    </div>
+                                <div className="list-group">
+                                    <Link to='/Home' className="list-group-item list-group-item-action">
+                                        All Categories
+                                    </Link>
+                                    {
+                                        categories.map(category => (
+
+                                            <div key={category.id} className="list-group-item list-group-item-action">
+                                                <Link to={`/Home?category=${category.type}`}>
+                                                    {category.type}
+                                                </Link>
+                                            </div>
+
+                                        ))
+                                    }
+
                                 </div>
                             </div>
                         </div>
@@ -43,82 +58,7 @@ const Home = () => {
                     <div className="col-sm-9">
                         <div className="card cards_border_none">
                             <div className="card-body ">
-                                <div className="row">
-                                    <div className="col-sm-4 mb-3 mb-sm-0">
-                                        <div className="card cardShadow">
-                                            <img src={blog1} alt="blog1" className='img-fluid' />
-                                            <div className="text-center" >
-                                                <br />
-                                                <p style={{ margin: "0" }}>All</p>
-                                                <h4>Testing Blog</h4>
-                                                <p>Author: habibariaz</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-sm-4">
-                                        <div className="card cardShadow">
-                                            <img src={blog2} alt="blog1" className='img-fluid' />
-                                            <div className="text-center" >
-                                                <br />
-                                                <p style={{ margin: "0" }}>Sports</p>
-                                                <h4>Testing Blog</h4>
-                                                <p>Author: habibariaz</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-sm-4">
-                                        <div className="card cardShadow">
-                                            <img src={blog3} alt="blog1" className='img-fluid' />
-                                            <div className="text-center" >
-                                                <br />
-                                                <p style={{ margin: "0" }}>Movies</p>
-                                                <h4>Testing Blog</h4>
-                                                <p>Author: habibariaz</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="row" style={{ marginTop: "50px" }}>
-                                    <div className="col-sm-4 mb-3 mb-sm-0">
-                                        <div className="card cardShadow">
-                                            <img src={blog3} alt="blog1" className='img-fluid' />
-                                            <div className="text-center" >
-                                                <br />
-                                                <p style={{ margin: "0" }}>Movies</p>
-                                                <h4>Testing Blog</h4>
-                                                <p>Author: habibariaz</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-sm-4">
-                                        <div className="card cardShadow">
-                                            <img src={blog1} alt="blog1" className='img-fluid' />
-                                            <div className="text-center" >
-                                                <br />
-                                                <p style={{ margin: "0" }}>All</p>
-                                                <h4>Testing Blog</h4>
-                                                <p>Author: habibariaz</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-sm-4">
-                                        <div className="card cardShadow">
-                                            <img src={blog2} alt="blog1" className='img-fluid' />
-                                            <div className="text-center" >
-                                                <br />
-                                                <p style={{ margin: "0" }}>Sports</p>
-                                                <h4>Testing Blog</h4>
-                                                <p>Author: habibariaz</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
+                                <Post />
                             </div>
                         </div>
                     </div>
