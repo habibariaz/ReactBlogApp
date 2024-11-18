@@ -19,7 +19,6 @@ import Update from './Components/Create/Update';
 const PrivateRoute = ({ isAuthenticated, ...props }) => {
   const token = sessionStorage.getItem('accessToken');
   return isAuthenticated && token ?
-    // return isAuthenticated ?
     <>
       <Outlet />
     </>
@@ -33,7 +32,7 @@ function App() {
   return (
     <>
       <DataProvider>
-        <BrowserRouter >
+        <HashRouter >
           <Routes>
             <Route path='/' element={<SignUp isUserAuthenticated={isUserAuthenticated} />} />
 
@@ -62,7 +61,7 @@ function App() {
             </Route>
 
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </DataProvider >
     </>
   );

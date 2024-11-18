@@ -2,7 +2,7 @@ import axios from 'axios';
 import { API_NOTIFICATION_MESSAGES, SERVICE_URL } from '../Constants/Config'
 import { getAccessToken, getType } from '../Utils/Common_utils';
 
-const API_URL = 'http://localhost:8000';
+const API_URL = '';
 
 const axiosInstance = axios.create({
     baseURL: API_URL,
